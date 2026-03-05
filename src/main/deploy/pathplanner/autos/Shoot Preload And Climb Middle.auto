@@ -1,0 +1,73 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Hub To Middle Shoot"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Intake Out"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot And Wiggle"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 5.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Stop Shoot And Wiggle"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Middle To Climb Prep Middle"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Climber Up"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 5.0
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Climb Prep Middle To Climb Middle"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Climber Down"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "Center Autons",
+  "choreoAuto": false
+}

@@ -1,0 +1,73 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "Intake On"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Start Trench To Outpost"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Intake Stop"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot And Wiggle"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 3.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Stop Shoot And Wiggle"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Climber Up"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Outpost To Climb Prep Right"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Climb Prep Right To Climb Right"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Climber Down"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": "Special Autons",
+  "choreoAuto": false
+}
