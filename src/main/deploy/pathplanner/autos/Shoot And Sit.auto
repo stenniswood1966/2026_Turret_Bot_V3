@@ -13,25 +13,38 @@
         {
           "type": "wait",
           "data": {
-            "waitTime": 0.5
+            "waitTime": 1.0
           }
         },
         {
-          "type": "named",
+          "type": "race",
           "data": {
-            "name": "Shoot And Wiggle"
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 18.0
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "Shoot And Wiggle"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 19.0
+                }
+              }
+            ]
           }
         },
         {
           "type": "named",
           "data": {
             "name": "Stop Shoot And Wiggle"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Do Nothing Path"
           }
         }
       ]

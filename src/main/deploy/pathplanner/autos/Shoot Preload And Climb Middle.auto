@@ -17,27 +17,34 @@
           }
         },
         {
-          "type": "named",
+          "type": "race",
           "data": {
-            "name": "Shoot And Wiggle"
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 5.0
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "Stop Shoot And Wiggle"
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "Shoot And Wiggle"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 5.0
+                }
+              }
+            ]
           }
         },
         {
           "type": "path",
           "data": {
             "pathName": "Middle To Climb Prep Middle"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Stop Shoot And Wiggle"
           }
         },
         {

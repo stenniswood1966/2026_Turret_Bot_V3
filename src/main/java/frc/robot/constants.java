@@ -132,7 +132,7 @@ public class constants {
         public static NeutralModeValue k_Motor1NeutralModeValue = NeutralModeValue.Brake;
         public static Boolean k_Motor1ForwardSoftLimitEnable = true;
         public static Boolean k_Motor1ReverseSoftLimitEnable = true;
-        public static double k_Motor1ForwardSoftLimitThreshold = 3.5;//was 17
+        public static double k_Motor1ForwardSoftLimitThreshold = 7.49;//was 17
         public static double k_Motor1ReverseSoftLimitThreshold = 0;
 
         //amp limits
@@ -144,10 +144,10 @@ public class constants {
         public static double k_Motor1SupplyCurrentLowerTime = 0;
         
         //set slot 0 gains
-        public static double k_Motor1kS = 0.3;//was.35 
+        public static double k_Motor1kS = 0.35;//was.35 
         public static double k_Motor1kV = 0.0;
         public static double k_Motor1kA = 0;
-        public static double k_Motor1kP = 20;//was 10
+        public static double k_Motor1kP = 5;//was 10
         public static double k_Motor1kI = 0;
         public static double k_Motor1kD = 0;
         public static StaticFeedforwardSignValue k_Motor1StaticFeedforwardSign = StaticFeedforwardSignValue.UseClosedLoopSign;

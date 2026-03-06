@@ -166,13 +166,13 @@ public class RobotContainer {
         joystick.rightTrigger()
             .and(t_hoodInRange)
             .and(t_shooterInRange)
-            //.and(t_turretInRange)
+            .and(t_turretInRange)
                 .whileTrue(feedersubsystem.feedCommand()
                     .alongWith(Commands.waitUntil(t_feederOn))
                     .andThen(pasubsystem.feedCommand()
                         .alongWith(intakesubsystem.intakeCommand())
                     .withName("Shooting")))
-                .whileFalse(pasubsystem.stopCommand()
+                .onFalse(pasubsystem.stopCommand()
                     .alongWith(Commands.waitUntil(t_paStopped))
                     .andThen(feedersubsystem.stopCommand()
                         .alongWith(intakesubsystem.stopCommand())
@@ -288,9 +288,17 @@ public class RobotContainer {
                     .withName("Stop Shooter")));
 
         //intake commands
-        NamedCommands.registerCommand("Intake Out", intakerotatesubsystem.setOutCommand());
-        NamedCommands.registerCommand("Intake In", intakerotatesubsystem.setInCommand());
-        NamedCommands.registerCommand("Intake On", intakesubsystem.intakeCommand());
+        NamedCommands.registerCommand("Intake Out", intakerotatesubsystem.setOutCommand().alongWith(Commands.waitUntil(t_intakeIsOut))
+            .andThen(turretsubsystem.setHome(false))
+            .alongWith(hoodsubsystem.setHome(false))
+            .withName("Intake Out"));
+        NamedCommands.registerCommand("Intake In", turretsubsystem.setHome(true)
+            .alongWith(hoodsubsystem.setHome(true))
+            .alongWith(Commands.waitUntil(t_turretInRange))
+            .andThen(intakerotatesubsystem.setInCommand())
+            .withName("Intake In"));
+        NamedCommands.registerCommand("Intake On", Commands.waitUntil(t_intakeIsOut)
+            .andThen(intakesubsystem.intakeCommand()));
         NamedCommands.registerCommand("Intake Stop", intakesubsystem.stopCommand());
 
         //Climb commands
