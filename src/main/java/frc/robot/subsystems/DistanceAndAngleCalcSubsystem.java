@@ -51,7 +51,7 @@ public class DistanceAndAngleCalcSubsystem extends SubsystemBase {
   double modifier = this.gearRatio;
   double potentialTarget;
 
-    //the interpolating double maps for scoring and passing do not touch without mentor approval
+  //the interpolating double maps for scoring and passing do not touch without mentor approval
   private static final InterpolatingDoubleTreeMap scoringMapHood = new InterpolatingDoubleTreeMap();
   static {
     scoringMapHood.put(1.3, 0.0);//distance angle in rotations
@@ -59,9 +59,10 @@ public class DistanceAndAngleCalcSubsystem extends SubsystemBase {
     scoringMapHood.put(2.8, 2.5);
     scoringMapHood.put(3.3, 2.7);
     scoringMapHood.put(3.8, 2.7);
-    scoringMapHood.put(4.3, 4.15);
-    scoringMapHood.put(5.3, 5.15);
-    scoringMapHood.put(5.7,5.4);
+    scoringMapHood.put(4.3, 4.0);
+    scoringMapHood.put(4.8, 4.15);
+    scoringMapHood.put(5.3, 4.75);
+    scoringMapHood.put(5.7,4.75);
 
   }
   private static final InterpolatingDoubleTreeMap passingMapHood = new InterpolatingDoubleTreeMap();
@@ -79,6 +80,7 @@ public class DistanceAndAngleCalcSubsystem extends SubsystemBase {
     scoringMapShooter.put(3.3, 21.5);
     scoringMapShooter.put(3.8, 23.5);
     scoringMapShooter.put(4.3, 25.5);
+    scoringMapShooter.put(4.8, 29.0);
     scoringMapShooter.put(5.3, 29.75);
     scoringMapShooter.put(5.7, 30.0);//distance rps in rps
   }
