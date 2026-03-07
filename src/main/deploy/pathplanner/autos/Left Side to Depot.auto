@@ -5,15 +5,22 @@
     "data": {
       "commands": [
         {
-          "type": "named",
+          "type": "parallel",
           "data": {
-            "name": "Intake Out"
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Start Left To Depot Prep Left"
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "Intake Out"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "Start Left To Depot Prep Left"
+                }
+              }
+            ]
           }
         },
         {

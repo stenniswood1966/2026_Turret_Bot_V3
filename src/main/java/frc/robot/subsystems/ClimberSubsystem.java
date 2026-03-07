@@ -64,6 +64,7 @@ public class ClimberSubsystem extends SubsystemBase {
     motionMagicConfigs.MotionMagicJerk = constants.kg_ClimberSubsystem.k_Motor1MotionMagicJerk;
 
     motor1.getConfigurator().apply(fx_cfg,0.050);
+    motor1.setPosition(0);
   }
 
 

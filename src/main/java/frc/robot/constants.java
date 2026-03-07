@@ -106,6 +106,8 @@ public class constants {
         public static CANBus k_Motor1CANBus = new CANBus("Flurb_Drive");
         public static InvertedValue k_Motor1InvertedValue = InvertedValue.CounterClockwise_Positive;
         public static NeutralModeValue k_Motor1NeutralModeValue = NeutralModeValue.Coast;
+        public static double k_Motor1PeakForwardVoltage = 8;
+        public static double k_Motor1PeakReverseVoltage = -8;
 
         //amp limits
         public static double k_Motor1StatorCurrentLimit = 120;
@@ -132,7 +134,7 @@ public class constants {
         public static NeutralModeValue k_Motor1NeutralModeValue = NeutralModeValue.Brake;
         public static Boolean k_Motor1ForwardSoftLimitEnable = true;
         public static Boolean k_Motor1ReverseSoftLimitEnable = true;
-        public static double k_Motor1ForwardSoftLimitThreshold = 7.49;//was 17
+        public static double k_Motor1ForwardSoftLimitThreshold = 7.0;//was 17
         public static double k_Motor1ReverseSoftLimitThreshold = 0;
 
         //amp limits
@@ -144,10 +146,10 @@ public class constants {
         public static double k_Motor1SupplyCurrentLowerTime = 0;
         
         //set slot 0 gains
-        public static double k_Motor1kS = 0.35;//was.35 
+        public static double k_Motor1kS = 00;//was.35 
         public static double k_Motor1kV = 0.0;
         public static double k_Motor1kA = 0;
-        public static double k_Motor1kP = 5;//was 10
+        public static double k_Motor1kP = 25;//was 10
         public static double k_Motor1kI = 0;
         public static double k_Motor1kD = 0;
         public static StaticFeedforwardSignValue k_Motor1StaticFeedforwardSign = StaticFeedforwardSignValue.UseClosedLoopSign;
@@ -162,7 +164,7 @@ public class constants {
         public static double k_HomePosition = 0;
 
         //threshold
-        public static Angle k_threshold = Angle.ofBaseUnits(.5, Revolution);
+        public static double k_threshold = .05;
 
         //Power setting
         public static double k_HomePower = -0.3;
@@ -208,7 +210,7 @@ public class constants {
         public static double k_WigglePosition = 8;
 
         //threshold
-        public static Angle k_threshold = Angle.ofBaseUnits(1, Revolution);
+        public static Angle k_threshold = Angle.ofRelativeUnits(.05, Revolution);
 
         //Power setting
         public static double k_HomePower = 0.3;
@@ -231,7 +233,7 @@ public class constants {
         public static double k_Motor1SupplyCurrentLowerTime = 0;
         
         //Power Settings
-        public static double k_IntakePower = .8;
+        public static double k_IntakePower = .7;
         public static double k_AntiJamPower = -.75;
     }
 
@@ -242,6 +244,8 @@ public class constants {
         public static CANBus k_Motor1CANBus = new CANBus("Flurb_Drive");
         public static InvertedValue k_Motor1InvertedValue = InvertedValue.CounterClockwise_Positive;
         public static NeutralModeValue k_Motor1NeutralModeValue = NeutralModeValue.Coast;
+        public static double k_Motor1PeakForwardVoltage = 8;
+        public static double k_Motor1PeakReverseVoltage = -8;
 
         //amp limits
         public static double k_Motor1StatorCurrentLimit = 120;
@@ -321,10 +325,10 @@ public class constants {
         public static double k_Motor1SupplyCurrentLowerTime = 0;
         
         //set slot 0 gains
-        public static double k_Motor1kS = 0.05; 
+        public static double k_Motor1kS = 0.0;//.05
         public static double k_Motor1kV = 0;
         public static double k_Motor1kA = 0;
-        public static double k_Motor1kP = 20;//40
+        public static double k_Motor1kP = 50;//20
         public static double k_Motor1kI = 0;
         public static double k_Motor1kD = 0;
         public static StaticFeedforwardSignValue k_Motor1StaticFeedforwardSign = StaticFeedforwardSignValue.UseClosedLoopSign;
@@ -339,6 +343,6 @@ public class constants {
         public static double k_HomePosition = 0;
 
         //threshold
-        public static Angle k_threshold = Angle.ofBaseUnits(.5, Rotation);
+        public static double k_threshold = .05;
     }
 }

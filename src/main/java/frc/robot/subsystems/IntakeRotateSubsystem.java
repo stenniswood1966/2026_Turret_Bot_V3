@@ -72,6 +72,7 @@ public class IntakeRotateSubsystem extends SubsystemBase {
     motionMagicConfigs.MotionMagicJerk = constants.kg_IntakeRotateSubsystem.k_Motor1MotionMagicJerk;
 
     motor1.getConfigurator().apply(fx_cfg,0.050);
+    motor1.setPosition(0);
   }
 
 
@@ -162,7 +163,7 @@ public class IntakeRotateSubsystem extends SubsystemBase {
 
   public final Trigger isHardStop = new Trigger(() -> {
     return motor1.getVelocity().getValue().abs(RotationsPerSecond) < 1 &&
-      motor1.getTorqueCurrent().getValue().abs(Amps) > 10;
+      motor1.getTorqueCurrent().getValue().abs(Amps) > 30;
   }).debounce(0.1);
 
   public Command homeCommand(){

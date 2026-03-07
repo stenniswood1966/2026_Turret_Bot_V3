@@ -74,6 +74,7 @@ public class HoodSubsystem extends SubsystemBase {
     motionMagicConfigs.MotionMagicJerk = constants.kg_HoodSubsystem.k_Motor1MotionMagicJerk; // Target jerk of 1600 rps/s/s (0.1 seconds); change me
 
     motor1.getConfigurator().apply(fx_cfg, 0.050); //apply configuration to motor
+    motor1.setPosition(0);
   }
 
   @Override
@@ -106,9 +107,10 @@ public class HoodSubsystem extends SubsystemBase {
     return Math.abs(motor1.getPosition().getValueAsDouble());
   }
 
-  public Trigger t_hoodInRange(Angle threshold){
+  public Trigger t_hoodInRange(double threshold){
     return new Trigger(() -> {
-      return motor1MotorPosition.isNear(Angle.ofRelativeUnits(mmReq.Position, Rotations), threshold);
+      //return motor1MotorPosition.isNear(Angle.ofRelativeUnits(mmReq.Position, Rotations), threshold);
+      return motor1.getClosedLoopError().getValueAsDouble() < threshold;
     });
   }
 

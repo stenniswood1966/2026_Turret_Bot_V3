@@ -55,40 +55,43 @@ public class DistanceAndAngleCalcSubsystem extends SubsystemBase {
   private static final InterpolatingDoubleTreeMap scoringMapHood = new InterpolatingDoubleTreeMap();
   static {
     scoringMapHood.put(1.3, 0.0);//distance angle in rotations
-    /* 
-    scoringMap.put(2.3, 2.0);
-    scoringMap.put(2.8, 3.5);
-    scoringMap.put(3.3, 5.91);
-    scoringMap.put(3.8, 7.8);
-    scoringMap.put(4.3, 8.5);
-    scoringMap.put(5.3, 11.5);
-    */
-    
-    scoringMapHood.put(5.7,7.0);
+    scoringMapHood.put(2.3, 1.65);
+    scoringMapHood.put(2.8, 2.5);
+    scoringMapHood.put(3.3, 2.7);
+    scoringMapHood.put(3.8, 2.7);
+    scoringMapHood.put(4.3, 4.15);
+    scoringMapHood.put(5.3, 5.15);
+    scoringMapHood.put(5.7,5.4);
+
   }
   private static final InterpolatingDoubleTreeMap passingMapHood = new InterpolatingDoubleTreeMap();
   static {
-    passingMapHood.put(0.0, 3.25);//distance angle in rotations
-    passingMapHood.put(100.0, 3.25);
+    passingMapHood.put(0.0, 7.0);//distance angle in rotations
+    passingMapHood.put(100.0, 7.0);
   }
 
   //the interpolating double maps for scoring and passing do not touch without mentor approval
   private static final InterpolatingDoubleTreeMap scoringMapShooter = new InterpolatingDoubleTreeMap();
   static {
-    scoringMapShooter.put(1.3, 16.0);
-    scoringMapShooter.put(2.3, 18.0);
-    scoringMapShooter.put(2.8, 19.5);
-    scoringMapShooter.put(3.3, 21.0);
-    scoringMapShooter.put(3.8, 21.5);
-    scoringMapShooter.put(4.3, 23.0);
-    scoringMapShooter.put(5.3, 25.0);
+    scoringMapShooter.put(1.3, 17.0);
+    scoringMapShooter.put(2.3, 19.0);
+    scoringMapShooter.put(2.8, 20.0);
+    scoringMapShooter.put(3.3, 21.5);
+    scoringMapShooter.put(3.8, 23.5);
+    scoringMapShooter.put(4.3, 25.5);
+    scoringMapShooter.put(5.3, 29.75);
     scoringMapShooter.put(5.7, 30.0);//distance rps in rps
   }
   private static final InterpolatingDoubleTreeMap passingMapShooter = new InterpolatingDoubleTreeMap();
   static {
-    passingMapShooter.put(0.0, 10.0);//distance rps in rps
-    passingMapShooter.put(9.0, 25.0);
-    passingMapShooter.put(12.0, 37.0);
+    passingMapShooter.put(4.0, 20.0);
+    passingMapShooter.put(6.0, 21.0);//distance rps in rps
+    passingMapShooter.put(7.0, 23.0);//distance rps in rps
+    passingMapShooter.put(8.0, 25.0);
+    passingMapShooter.put(9.0, 30.0);//distance rps in rps
+    passingMapShooter.put(10.0, 35.0);//distance rps in rps
+    passingMapShooter.put(12.0, 40.0);
+    passingMapShooter.put(15.0, 45.0);//distance rps in rps
   }
 
   /** Creates a new DistanceAndAngleCalcSubsystem. */

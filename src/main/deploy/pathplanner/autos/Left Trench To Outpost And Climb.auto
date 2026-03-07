@@ -5,21 +5,9 @@
     "data": {
       "commands": [
         {
-          "type": "named",
-          "data": {
-            "name": "Intake On"
-          }
-        },
-        {
           "type": "path",
           "data": {
             "pathName": "Start Trench To Outpost"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "Intake Stop"
           }
         },
         {

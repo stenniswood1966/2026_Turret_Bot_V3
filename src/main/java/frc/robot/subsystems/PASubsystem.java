@@ -31,6 +31,8 @@ public class PASubsystem extends SubsystemBase {
     //configuration for motor1
     fx_cfg.MotorOutput.Inverted = constants.kg_PASubsystem.k_Motor1InvertedValue;
     fx_cfg.MotorOutput.NeutralMode = constants.kg_PASubsystem.k_Motor1NeutralModeValue;
+    fx_cfg.Voltage.PeakForwardVoltage = constants.kg_PASubsystem.k_Motor1PeakForwardVoltage;
+    fx_cfg.Voltage.PeakReverseVoltage = constants.kg_PASubsystem.k_Motor1PeakReverseVoltage;
 
     //amp limits
     fx_cfg.CurrentLimits.StatorCurrentLimit = constants.kg_PASubsystem.k_Motor1StatorCurrentLimit;

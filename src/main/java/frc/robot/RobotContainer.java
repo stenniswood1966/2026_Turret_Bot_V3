@@ -160,6 +160,19 @@ public class RobotContainer {
 
         drivetrain.registerTelemetry(logger::telemeterize);
 
+        joystick.pov(0).whileTrue(drivetrain.applyRequest(() ->
+            forwardStraight.withVelocityX(0.4).withVelocityY(0))
+        );
+        joystick.pov(90).whileTrue(drivetrain.applyRequest(() ->
+            forwardStraight.withVelocityX(0).withVelocityY(-.4))
+        );
+        joystick.pov(180).whileTrue(drivetrain.applyRequest(() ->
+            forwardStraight.withVelocityX(-0.4).withVelocityY(0))
+        );
+        joystick.pov(270).whileTrue(drivetrain.applyRequest(() ->
+            forwardStraight.withVelocityX(0).withVelocityY(.4))
+        );
+
         joystick.x().whileTrue(drivetrain.applyRequest(() -> brake));
         
         //shoot
@@ -331,8 +344,8 @@ public class RobotContainer {
     }
 
     private double getCalculatedMaxSpeed(){
-        if (t_feederOn.getAsBoolean() && !t_paStopped.getAsBoolean()) {
-            return MaxSpeed/4;
+        if (joystick.rightTrigger().getAsBoolean()) {
+            return MaxSpeed/5;
         } else {
             return MaxSpeed;
         }
