@@ -14,6 +14,7 @@ import com.ctre.phoenix6.signals.GravityTypeValue;
 import edu.wpi.first.apriltag.AprilTagFieldLayout;
 import edu.wpi.first.apriltag.AprilTagFields;
 import edu.wpi.first.math.geometry.Pose2d;
+import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.util.Units;
 import edu.wpi.first.units.measure.AngularVelocity;
 import edu.wpi.first.units.measure.Angle;
@@ -55,6 +56,10 @@ public class constants {
         public static Pose2d k_HubPose2dBlue = new Pose2d(FIELD_LAYOUT.getTagPose(26).get().getX() + Units.inchesToMeters(47/2),k_MiddleOfField,null);
         public static Pose2d k_PassLeftPose2dBlue = new Pose2d(1,k_FieldWidth - 1,null);
         public static Pose2d k_PassRightPose2dBlue = new Pose2d(1,1,null);
+
+        //red and blue reset points
+        public static Pose2d k_RedResetPoint = new Pose2d(13.18 ,3.99, new Rotation2d(Math.toRadians(180)));
+        public static Pose2d k_BlueResetPoint = new Pose2d(3.34 ,3.94, new Rotation2d(0));
     }
 
     //Settings for the ClimberSubsystem
@@ -179,7 +184,7 @@ public class constants {
         public static NeutralModeValue k_Motor1NeutralModeValue = NeutralModeValue.Brake;
         public static Boolean k_Motor1ForwardSoftLimitEnable = true;
         public static Boolean k_Motor1ReverseSoftLimitEnable = true;
-        public static double k_Motor1ForwardSoftLimitThreshold = 15.931641;
+        public static double k_Motor1ForwardSoftLimitThreshold = 16.78;
         public static double k_Motor1ReverseSoftLimitThreshold = 0;
 
         //amp limits
@@ -206,7 +211,7 @@ public class constants {
 
         //Motion Magic Setpoints
         public static double k_InPosition = 0;
-        public static double k_OutPosition = 15.9;
+        public static double k_OutPosition = 16.7;
         public static double k_WigglePosition = 8;
 
         //threshold

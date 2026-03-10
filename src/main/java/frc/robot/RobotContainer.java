@@ -20,6 +20,7 @@ import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
+
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import edu.wpi.first.wpilibj2.command.Commands;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
@@ -174,6 +175,9 @@ public class RobotContainer {
         );
 
         joystick.x().whileTrue(drivetrain.applyRequest(() -> brake));
+
+        //reset bot pose
+        joystick.start().onTrue(visionsubsystemfront.resetPose());
         
         //shoot
         joystick.rightTrigger()
