@@ -98,7 +98,7 @@ public class constants {
 
         //Motion Magic Setpoints
         public static double k_UpPosition = 98;
-        public static double k_DownPosition = 15;
+        public static double k_DownPosition = 17;
 
         //Power setting
         public static double k_HomePower = -0.3;

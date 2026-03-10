@@ -196,6 +196,11 @@ public class RobotContainer {
                     .withName("Stop Shooter"))
                 );
         
+        //reverse pa/wooval %F
+        joystick.b().whileTrue(pasubsystem.antiJamCommand()
+            .withName("Reverse PA Adam"))
+            .onFalse(pasubsystem.stopCommand());
+        
         //intake 
         joystick.rightBumper()
             .and(t_intakeIsOut)
@@ -268,9 +273,9 @@ public class RobotContainer {
         Button_15.whileTrue(intakesubsystem.antiJamCommand()
             .withName("Reverse Intake"))
             .onFalse(intakesubsystem.stopCommand());
-        Button_16.whileTrue(pasubsystem.antiJamCommand()
-            .withName("Reverse PA"))
-            .onFalse(pasubsystem.stopCommand());
+        //Button_16.whileTrue(pasubsystem.antiJamCommand()
+            //.withName("Reverse PA"))
+            //.onFalse(pasubsystem.stopCommand());
         Button_17.whileTrue(feedersubsystem.antiJamCommand()
             .alongWith(intakesubsystem.antiJamCommand())
             .alongWith(pasubsystem.antiJamCommand())
