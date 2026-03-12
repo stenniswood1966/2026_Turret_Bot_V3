@@ -5,33 +5,15 @@
     "data": {
       "commands": [
         {
+          "type": "path",
+          "data": {
+            "pathName": "Hub To Middle Shoot"
+          }
+        },
+        {
           "type": "named",
           "data": {
             "name": "Intake Out"
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Start Left To Depot Prep Left"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "Intake On"
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Depot Prep To Depot Clear"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "Intake Stop"
           }
         },
         {
@@ -47,7 +29,7 @@
               {
                 "type": "wait",
                 "data": {
-                  "waitTime": 6.0
+                  "waitTime": 5.0
                 }
               }
             ]
@@ -68,13 +50,13 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Depot Clear to Climb Prep Left"
+            "pathName": "Middle Shoot To Climb Prep Right"
           }
         },
         {
           "type": "path",
           "data": {
-            "pathName": "Climb Prep Left to Climb Left"
+            "pathName": "Climb Prep Right To Climb Right"
           }
         },
         {
@@ -86,7 +68,7 @@
       ]
     }
   },
-  "resetOdom": true,
-  "folder": "Left Autons",
+  "resetOdom": false,
+  "folder": "Center Autons",
   "choreoAuto": false
 }

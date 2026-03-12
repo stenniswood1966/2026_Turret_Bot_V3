@@ -96,11 +96,35 @@
           "data": {
             "name": "Stop Shoot And Wiggle"
           }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Depot Clear to Climb Prep Left"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Climber Up"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Climb Prep Left to Climb Left"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Climber Down"
+          }
         }
       ]
     }
   },
-  "resetOdom": false,
+  "resetOdom": true,
   "folder": "Left Autons",
   "choreoAuto": false
 }

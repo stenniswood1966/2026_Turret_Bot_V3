@@ -212,7 +212,7 @@ public class constants {
         //Motion Magic Setpoints
         public static double k_InPosition = 0;
         public static double k_OutPosition = 16.7;
-        public static double k_WigglePosition = 8;
+        public static double k_WigglePosition = 5;//was 8
 
         //threshold
         public static Angle k_threshold = Angle.ofRelativeUnits(.05, Revolution);
@@ -238,7 +238,7 @@ public class constants {
         public static double k_Motor1SupplyCurrentLowerTime = 0;
         
         //Power Settings
-        public static double k_IntakePower = .7;
+        public static double k_IntakePower = .85;//was .7
         public static double k_AntiJamPower = -.75;
     }
 

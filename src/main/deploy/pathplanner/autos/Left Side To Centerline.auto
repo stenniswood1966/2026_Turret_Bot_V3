@@ -7,13 +7,13 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Hub To Middle Shoot"
+            "pathName": "Start Left To Left Centerline"
           }
         },
         {
-          "type": "named",
+          "type": "path",
           "data": {
-            "name": "Intake Out"
+            "pathName": "Left Centerline To Start Left"
           }
         },
         {
@@ -36,45 +36,15 @@
           }
         },
         {
-          "type": "path",
-          "data": {
-            "pathName": "Middle To Climb Prep Middle"
-          }
-        },
-        {
           "type": "named",
           "data": {
             "name": "Stop Shoot And Wiggle"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "Climber Up"
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 5.0
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Climb Prep Middle To Climb Middle"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "Climber Down"
           }
         }
       ]
     }
   },
-  "resetOdom": true,
-  "folder": "Center Autons",
+  "resetOdom": false,
+  "folder": "Left Autons",
   "choreoAuto": false
 }

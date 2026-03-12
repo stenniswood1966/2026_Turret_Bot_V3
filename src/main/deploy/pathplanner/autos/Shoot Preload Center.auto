@@ -50,7 +50,7 @@
       ]
     }
   },
-  "resetOdom": true,
+  "resetOdom": false,
   "folder": "Center Autons",
   "choreoAuto": false
 }

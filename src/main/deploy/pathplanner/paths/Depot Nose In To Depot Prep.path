@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 0.2053493975903613,
-        "y": 0.8878192771084343
+        "x": 1.014,
+        "y": 6.165903614457831
       },
       "prevControl": null,
       "nextControl": {
-        "x": 0.7201026995372981,
-        "y": 0.9685002908778175
+        "x": 1.2981204819277108,
+        "y": 6.460951807228916
       },
       "isLocked": false,
-      "linkedName": "Outpost"
+      "linkedName": "Depot Nose In"
     },
     {
       "anchor": {
-        "x": 0.962492242817832,
-        "y": 2.7463438942651974
+        "x": 0.6206024096385543,
+        "y": 7.214963855421687
       },
       "prevControl": {
-        "x": 0.962492242817832,
-        "y": 2.1491814336501016
+        "x": 1.4686039871199665,
+        "y": 7.113757405604955
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Climb Prep Right"
+      "linkedName": "Depot Prep"
     }
   ],
   "rotationTargets": [],
@@ -33,22 +33,22 @@
   "pointTowardsZones": [],
   "eventMarkers": [],
   "globalConstraints": {
-    "maxVelocity": 1.5,
-    "maxAcceleration": 1.5,
-    "maxAngularVelocity": 270.0,
-    "maxAngularAcceleration": 360.0,
+    "maxVelocity": 1.0,
+    "maxAcceleration": 1.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0,
     "nominalVoltage": 12.0,
     "unlimited": false
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 180.0
+    "rotation": -115.0
   },
   "reversed": false,
-  "folder": "Right Paths",
+  "folder": "Left Paths",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": -89.3235944576125
+    "rotation": 180.0
   },
-  "useDefaultConstraints": false
+  "useDefaultConstraints": true
 }

@@ -3,25 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 0.9467189728958629,
-        "y": 7.10793152639087
+        "x": 0.6206024096385543,
+        "y": 7.214963855421687
       },
       "prevControl": null,
       "nextControl": {
-        "x": 0.946718972895863,
-        "y": 6.1135915034439074
+        "x": 0.6206024096385544,
+        "y": 6.2206238324747245
       },
       "isLocked": false,
       "linkedName": "Depot Prep"
     },
     {
       "anchor": {
-        "x": 0.7893581268885115,
-        "y": 5.066920646298859
+        "x": 0.6206024096385543,
+        "y": 4.952927710843373
       },
       "prevControl": {
-        "x": 0.8091063064213571,
-        "y": 5.876596007145538
+        "x": 0.6403505891714001,
+        "y": 5.762603071690052
       },
       "nextControl": null,
       "isLocked": false,
@@ -34,7 +34,7 @@
   "eventMarkers": [],
   "globalConstraints": {
     "maxVelocity": 0.3,
-    "maxAcceleration": 0.3,
+    "maxAcceleration": 0.5,
     "maxAngularVelocity": 540.0,
     "maxAngularAcceleration": 720.0,
     "nominalVoltage": 12.0,
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -135.0
+    "rotation": -115.0
   },
   "reversed": false,
   "folder": "Left Paths",
   "idealStartingState": {
-    "velocity": 0,
-    "rotation": -135.0
+    "velocity": 0.0,
+    "rotation": -115.0
   },
   "useDefaultConstraints": false
 }

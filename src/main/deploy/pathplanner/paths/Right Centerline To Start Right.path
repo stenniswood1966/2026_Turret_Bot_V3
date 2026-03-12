@@ -3,48 +3,37 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.1230481927710843,
-        "y": 3.9912891566265065
+        "x": 7.756397590361445,
+        "y": 3.040578313253012
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.2384051154633435,
-        "y": 3.6465900091290173
+        "x": 6.532493975903614,
+        "y": 2.210072289156626
       },
       "isLocked": false,
-      "linkedName": "Middle Position"
+      "linkedName": "Right Centerline"
     },
     {
       "anchor": {
-        "x": 1.6769815515540212,
-        "y": 3.76
+        "x": 3.024698795180723,
+        "y": 2.4395542168674704
       },
       "prevControl": {
-        "x": 2.1336458116747616,
-        "y": 3.76
-      },
-      "nextControl": {
-        "x": 1.2994038644905412,
-        "y": 3.76
-      },
-      "isLocked": false,
-      "linkedName": null
-    },
-    {
-      "anchor": {
-        "x": 0.386,
-        "y": 3.76
-      },
-      "prevControl": {
-        "x": 0.7837210964674688,
-        "y": 3.7501797260131484
+        "x": 4.336024096385539,
+        "y": 2.4395542168674704
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Climb Prep Middle"
+      "linkedName": null
     }
   ],
-  "rotationTargets": [],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.5,
+      "rotationDegrees": 45.0
+    }
+  ],
   "constraintZones": [],
   "pointTowardsZones": [],
   "eventMarkers": [],
@@ -58,13 +47,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 0.6661999701831005
+    "rotation": 45.0
   },
   "reversed": false,
-  "folder": "Center Paths",
+  "folder": "Right Paths",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": 90.0
   },
   "useDefaultConstraints": true
 }

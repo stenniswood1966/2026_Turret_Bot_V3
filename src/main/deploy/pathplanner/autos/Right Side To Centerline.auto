@@ -7,7 +7,13 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Start Trench To Outpost"
+            "pathName": "Start Right To Right Centerline"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Right Centerline To Start Right"
           }
         },
         {
@@ -23,7 +29,7 @@
               {
                 "type": "wait",
                 "data": {
-                  "waitTime": 3.0
+                  "waitTime": 4.0
                 }
               }
             ]
@@ -34,35 +40,11 @@
           "data": {
             "name": "Stop Shoot And Wiggle"
           }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "Climber Up"
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Outpost To Climb Prep Right"
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Climb Prep Right To Climb Right"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "Climber Down"
-          }
         }
       ]
     }
   },
-  "resetOdom": true,
-  "folder": "Special Autons",
+  "resetOdom": false,
+  "folder": "Right Autons",
   "choreoAuto": false
 }

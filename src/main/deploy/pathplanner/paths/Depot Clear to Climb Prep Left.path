@@ -3,13 +3,13 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 0.7893581268885115,
-        "y": 5.066920646298859
+        "x": 0.6206024096385543,
+        "y": 4.952927710843373
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.1974989307127342,
-        "y": 5.05381532825814
+        "x": 1.028743213462777,
+        "y": 4.939822392802654
       },
       "isLocked": false,
       "linkedName": "Depot Clear"
@@ -53,7 +53,7 @@
   "folder": "Left Paths",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": -135.0
+    "rotation": -115.0
   },
   "useDefaultConstraints": false
 }
