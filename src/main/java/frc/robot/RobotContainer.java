@@ -97,7 +97,6 @@ public class RobotContainer {
     public final ShooterSubsystem shootersubsystem = new ShooterSubsystem();
     public final DistanceAndAngleCalcSubsystem distanceandanglecalcsubsystem = 
         new DistanceAndAngleCalcSubsystem(drivetrain, hoodsubsystem, shootersubsystem, turretsubsystem);
-
     
     //MUST BE AFTER THE DRIVETRAIN DECLERATION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     public VisionSubsystemFront visionsubsystemfront = new VisionSubsystemFront(drivetrain);
