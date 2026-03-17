@@ -60,6 +60,10 @@
     {
       "waypointRelativePos": 1.4925373134328175,
       "rotationDegrees": -75.0
+    },
+    {
+      "waypointRelativePos": 1.7609958506224106,
+      "rotationDegrees": -95.0
     }
   ],
   "constraintZones": [
@@ -112,7 +116,7 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -90.0
+    "rotation": -95.0
   },
   "reversed": false,
   "folder": "Left Paths",
